@@ -37,6 +37,8 @@ export default {
   modules: [
   ],
 
+  middleware: ['auth', 'stats'],
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     babel:{

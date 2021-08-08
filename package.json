@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "core-js": "^3.9.1",
+    "json-server": "^0.16.3",
+    "json-server-auth": "^2.1.0",
     "nuxt": "^2.15.3"
   },
   "devDependencies": {

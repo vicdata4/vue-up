@@ -1,0 +1,109 @@
+{
+  "users": [
+    {
+      "email": "email@email.com",
+      "password": "$2a$10$9H9RWzaXDV8D4G9IO8U6qu7r0H9qIdszaBZyGifrqD69pbnCN2OhO",
+      "id": 2
+    }
+  ],
+  "home": [
+    {
+      "id": 1,
+      "name": "Tax Season 2021",
+      "year": "2021"
+    },
+    {
+      "id": 2,
+      "name": "Tax Season 2022",
+      "year": "2022"
+    }
+  ],
+  "form": [
+    {
+      "id": 11,
+      "taxesId": 1,
+      "inputFields": [
+        {
+          "id": "name",
+          "label": "Name",
+          "placeholder": "Your first name",
+          "type": "text",
+          "maxLength": 20
+        },
+        {
+          "id": "surname",
+          "label": "Surname",
+          "placeholder": "Your last name",
+          "type": "text",
+          "maxLength": 40
+        },
+        {
+          "id": "age",
+          "label": "Age",
+          "placeholder": "Your age",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "taxesId": 2,
+      "inputFields": [
+        {
+          "id": "email",
+          "label": "Email",
+          "placeholder": "Your email",
+          "type": "text"
+        },
+        {
+          "id": "phone",
+          "label": "Phone",
+          "placeholder": "Your phone",
+          "type": "text",
+          "maxLength": 20
+        }
+      ]
+    }
+  ],
+  "submissions": [
+    {
+      "email": "vicdata@outlook.com",
+      "phone": "1111",
+      "taxId": "2",
+      "id": 1
+    },
+    {
+      "email": "vghaya@hotmail.com",
+      "phone": "2222222",
+      "taxId": "2",
+      "id": 2
+    },
+    {
+      "name": "Ana",
+      "surname": "Garci2",
+      "age": "2221",
+      "taxId": "1",
+      "id": 3
+    },
+    {
+      "email": "sdfg@asdf.com",
+      "phone": "4444",
+      "taxId": "2",
+      "id": 4
+    },
+    {
+      "name": "test1",
+      "surname": "test2",
+      "age": "99",
+      "taxId": "1",
+      "id": 7
+    },
+    {
+      "name": "as",
+      "surname": "asd",
+      "age": "33",
+      "taxId": "1",
+      "id": 8
+    }
+  ]
+}

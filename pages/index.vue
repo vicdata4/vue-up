@@ -1,16 +1,14 @@
 <template>
   <div class="container">
       <Header />
+      <LoginForm />
   </div>
 </template>
 
 <script>
-export default {}
+
 </script>
 
 <style>
-.container {
-  
-}
 
 </style>
