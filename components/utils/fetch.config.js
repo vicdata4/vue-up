@@ -1,7 +1,7 @@
 import { getCookie } from './functions';
 const url = 'http://localhost:2900';
 
-const fetch_ = async (type, path = '') => {
+export default async (type, path = '') => {
     try {
         return await fetch(`${url}${path}`, type)
             .then(errorHandler)
@@ -12,16 +12,9 @@ const fetch_ = async (type, path = '') => {
     }
 };
 
-export default fetch_;
-
 const errorHandler = (response) => {
     if (!response.ok) {
-        if(response.statusText ===  'Unauthorized') {
-            // window.location.href = '/';
-            console.log('Unauthoirized');
-        } else {
-            return { error: response.statusText, errorCode: response.status };
-        }
+        return { error: response.statusText, errorCode: response.status };  
     }
     return response.json();
 };

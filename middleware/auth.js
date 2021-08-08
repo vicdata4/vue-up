@@ -2,10 +2,10 @@ import fetch, { http } from "/components/utils/fetch.config";
 
 export default async function ({ redirect, store }) {
     const response = await fetch(http.get(), "/home");
-    const isLogged = Array.isArray(response);
+    const isLogged = !response.error;
 
     if (!isLogged) {
         redirect({ name: '/' });
-        alert('You need to be logged in')
+        alert('You need to be logged in');
     }
 }
