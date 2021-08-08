@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-      <Header />
+      Home view
   </div>
 </template>
 
@@ -9,8 +9,4 @@ export default {}
 </script>
 
 <style>
-.container {
-  
-}
-
 </style>
