@@ -1,4 +1,4 @@
-import fetch, { http } from "../components/utils/fetch.config";
+import fetch, { http } from "/components/utils/fetch.config";
 
 export default async function ({ redirect, store }) {
     const response = await fetch(http.get(), "/home");
@@ -6,5 +6,6 @@ export default async function ({ redirect, store }) {
 
     if (!isLogged) {
         redirect({ name: '/' });
+        alert('You need to be logged in')
     }
 }

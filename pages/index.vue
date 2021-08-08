@@ -1,14 +1,11 @@
 <template>
   <div class="container">
-      <Header />
-      <LoginForm />
+    <LoginForm />
   </div>
 </template>
 
 <script>
-
 </script>
 
 <style>
-
 </style>
