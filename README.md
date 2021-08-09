@@ -1,20 +1,45 @@
-# vue-up
+<img src="https://cdn.jsdelivr.net/gh/vicdata4/doc-template/assets/seed-icon.png" width="40">
 
-## Build Setup
+## VueUp
 
-```bash
-# install dependencies
-$ npm install
+![npm](https://img.shields.io/badge/npm-v1.0-blue.svg)
+![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+## Documentation
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+For detailed explanation on how the project works, check out [Nuxt.js docs](https://nuxtjs.org).
 
-# generate static project
-$ npm run generate
+Also is important to learn about [json-server](https://github.com/typicode/json-server) and [json-server-auth](https://github.com/jeremyben/json-server-auth) libraries to understand the login validation and authentication.
+
+## Quick start
+
+Install dependencies
+```
+npm install
+```
+Run application
+```
+npm run dev
+```
+Run json-server
+```
+npm run server
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+## More
+
+Build for production and launch server
+
+```bash
+npm run build
+```
+
+```bash
+npm run start
+```
+
+ Generate static project
+ ```bash
+npm run generate
+```
