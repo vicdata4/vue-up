@@ -13,16 +13,24 @@ Also is important to learn about [json-server](https://github.com/typicode/json-
 
 ## Quick start
 
-Install dependencies
+Clone project
+```bash
+git clone https://github.com/vicdata4/vue-up.git
 ```
+```bash
+cd vue-up
+```
+
+Now, install dependencies
+```bash
 npm install
 ```
 Run application
-```
+```bash
 npm run dev
 ```
 Run json-server
-```
+```bash
 npm run server
 ```
 

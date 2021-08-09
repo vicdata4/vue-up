@@ -26,8 +26,8 @@ import fetch, { http } from "./utils/fetch.config";
 export default {
   data() {
     return {
-      email: '',
-      password: '',
+      email: "",
+      password: "",
     };
   },
   methods: {
@@ -40,7 +40,7 @@ export default {
 
         if (!response.error) {
           document.cookie = `XSRF-TOKEN=${response.accessToken}`;
-          window.location.href = "/home";
+          window.location.href = "/app";
         } else {
           alert("Invalid email or password");
         }

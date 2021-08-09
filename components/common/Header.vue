@@ -1,13 +1,11 @@
 <template>
   <header>
     <div>
-      <NuxtLink to="/" class="header-link">Vue App</NuxtLink>
+      <NuxtLink to="/" class="header-link">Vue App v1.0</NuxtLink>
     </div>
     <div>
-      {{isLogged}}
-      <NuxtLink to="home" class="header-link">Home</NuxtLink>
+      <NuxtLink to="app" class="header-link">App</NuxtLink>
       <button v-if="isLogged" @click="logOut">Logout</button>
-      <span>v1.0</span>
     </div>
   </header>
 </template>
