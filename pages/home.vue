@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import fetch, { http } from "/components/utils/fetch.config";
+
 export default {
   middleware: 'auth',
 };

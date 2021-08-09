@@ -7,5 +7,7 @@ export default async function ({ redirect, store }) {
     if (!isLogged) {
         redirect({ name: '/' });
         alert('You need to be logged in');
+    } else {
+        store.commit('setIsLogged', true);
     }
 }

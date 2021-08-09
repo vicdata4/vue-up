@@ -1,9 +1,12 @@
 <template>
   <header>
-    <div>Vue Up</div>
     <div>
-      <NuxtLink to="home">Home</NuxtLink>
-      <button @click="logOut">Logout</button>
+      <NuxtLink to="/" class="header-link">Vue App</NuxtLink>
+    </div>
+    <div>
+      {{isLogged}}
+      <NuxtLink to="home" class="header-link">Home</NuxtLink>
+      <button v-if="isLogged" @click="logOut">Logout</button>
       <span>v1.0</span>
     </div>
   </header>
@@ -11,6 +14,7 @@
 
 <script>
 import { deleteCookie } from "/components/utils/functions";
+import { mapGetters, mapActions } from 'vuex';
 
 export default {
   methods: {
@@ -19,6 +23,11 @@ export default {
       window.location.href = "/";
     },
   },
+  computed: {
+    ...mapGetters({
+      isLogged: 'isLogged'
+    })
+  }
 };
 </script>
 
@@ -31,6 +40,10 @@ header {
   background-color: #24292e;
   width: 100%;
   padding: 20px 30px;
+  color: white;
+}
+
+.header-link {
   color: white;
 }
 </style>
