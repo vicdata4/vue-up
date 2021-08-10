@@ -17,10 +17,10 @@
 
 <script>
 import { deleteCookie } from "/components/utils/functions";
-import LogoutIcon from "../../assets/svg/logout.svg";
-import UserIcon from "../../assets/svg/user.svg";
-import MenuIcon from "../../assets/svg/menu.svg";
-import { mapGetters, mapActions } from "vuex";
+import LogoutIcon from "@/assets/svg/logout.svg";
+import UserIcon from "@/assets/svg/user.svg";
+import MenuIcon from "@/assets/svg/menu.svg";
+import { mapGetters } from "vuex";
 
 export default {
   props: ["homeMenu"],

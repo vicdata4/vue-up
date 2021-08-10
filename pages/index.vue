@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <LoginForm class="login-case" v-if="!isLogged" />
+    <LoginForm class="login-case" v-if="!isLogged" @submit-form="submitForm" />
     <div>
       <h2>Componentes</h2>
       <Modal>
@@ -22,13 +22,26 @@
 </template>
 
 <script>
+import fetch, { http } from "@/components/utils/fetch.config";
 import { mapGetters } from "vuex";
 
 export default {
-  middleware: "login",
+  middleware: 'login',
+  methods: {
+    async submitForm(data) {
+      const response = await fetch(http.post(data), '/login');
+
+        if (!response.error) {
+          document.cookie = `XSRF-TOKEN=${response.accessToken}`;
+          window.location.href = '/app';
+        } else {
+          alert('Invalid email or password');
+        }
+    }
+  },
   computed: {
     ...mapGetters({
-      isLogged: "isLogged",
+      isLogged: 'isLogged',
     }),
   },
 };

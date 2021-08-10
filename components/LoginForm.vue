@@ -36,15 +36,7 @@ export default {
       const data = { email: this.email, password: this.password };
 
       if (this.email && this.password) {
-        const response = await fetch(http.post(data), "/login");
-
-        if (!response.error) {
-          document.cookie = `XSRF-TOKEN=${response.accessToken}`;
-          window.location.href = "/app";
-        } else {
-          alert("Invalid email or password");
-        }
-        //this.$emit("search-value", this.name);
+        this.$emit("submit-form", data);
       } else {
         console.log("Complete all fields");
       }

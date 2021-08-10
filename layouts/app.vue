@@ -10,5 +10,5 @@
 </template>
 
 <style>
-@import 'components/styles/layout-styles.css';
+@import '@/components/styles/layout-styles.css';
 </style>
