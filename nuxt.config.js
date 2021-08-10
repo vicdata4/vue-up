@@ -40,16 +40,24 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+
   ],
-
+  module: {},
   middleware: ['auth', 'stats'],
-
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    babel:{
-      plugins: [
-        ["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
-      ]
-    }
+    extend: (config) => {
+      const svgRule = config.module.rules.find(rule => rule.test.test('.svg'));
+ 
+      svgRule.test = /\.(png|jpe?g|gif|webp)$/;
+ 
+      config.module.rules.push({
+        test: /\.svg$/,
+        use: [
+          'babel-loader',
+          'vue-svg-loader',
+        ],
+      });
+    },
   }
 }

@@ -58,10 +58,6 @@ form > * {
   display: block;
 }
 
-form {
-  padding: 20px;
-}
-
 .input-text {
   margin: 20px 0px;
 }
