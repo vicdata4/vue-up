@@ -1,7 +1,7 @@
 <template>
   <header>
     <NuxtLink to="/"
-      ><img src="../../assets/seed-icon.png" class="header-icon" width="30"
+      ><img src="@/assets/seed-icon.png" class="header-icon" width="30"
     /></NuxtLink>
     <div class="header-menu">
       <NuxtLink to="/app" v-if="isLogged" :class="`menu-link${homeMenu ? ' home' : ''}`"><UserIcon /></NuxtLink>
@@ -17,10 +17,10 @@
 
 <script>
 import { deleteCookie } from "/components/utils/functions";
-import LogoutIcon from "@/assets/svg/logout.svg";
-import UserIcon from "@/assets/svg/user.svg";
-import MenuIcon from "@/assets/svg/menu.svg";
 import { mapGetters } from "vuex";
+import MenuIcon from "@/assets/svg/menu.svg";
+import UserIcon from "@/assets/svg/user.svg";
+import LogoutIcon from "@/assets/svg/logout.svg";
 
 export default {
   props: ["homeMenu"],

@@ -5,9 +5,7 @@
     </div>
     <div ref="modal" class="modal" style="align-items: center">
       <div ref="content" class="modal-content">
-        <slot name="header" class="header"></slot>
         <slot name="content" class="content"></slot>
-        <slot name="footer" class="footer"></slot>
       </div>
     </div>
   </div>

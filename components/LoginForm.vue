@@ -1,7 +1,7 @@
 <template>
   <form @submit.prevent="submitForm">
     <input
-      type="email"
+      type="text"
       v-model="email"
       name="email"
       placeholder="email"
@@ -22,6 +22,7 @@
 
 <script>
 import fetch, { http } from "./utils/fetch.config";
+import { emailValidator } from './utils/functions';
 
 export default {
   data() {
@@ -32,10 +33,9 @@ export default {
   },
   methods: {
     submitForm: async function () {
-      console.log({ email: this.email, password: this.password });
       const data = { email: this.email, password: this.password };
 
-      if (this.email && this.password) {
+      if (emailValidator(this.email) && this.password) {
         this.$emit("submit-form", data);
       } else {
         console.log("Complete all fields");
