@@ -18,9 +18,7 @@ describe('Logged user header', () => {
       isLogged: () => false,
     };
 
-    store = new Vuex.Store({
-      getters
-    });
+    store = new Vuex.Store({ getters });
 
     wrapper = shallowMount(Header, { store, localVue, stubs });
   });
@@ -45,9 +43,7 @@ describe('Not Logged user header', () => {
       isLogged: () => true,
     };
 
-    store = new Vuex.Store({
-      getters
-    });
+    store = new Vuex.Store({ getters });
 
     wrapper = shallowMount(Header, { store, localVue, stubs });
   });
