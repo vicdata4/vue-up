@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <LoginForm class="login-case" v-if="!isLogged" @submit-form="submitForm" />
+    <LoginForm ref="loginForm" class="login-case" v-if="!isLogged" @submit-form="submitForm" />
     <div>
       <h2>Componentes</h2>
       <Modal>
@@ -22,8 +22,8 @@
 </template>
 
 <script>
-import fetch, { http } from "@/components/utils/fetch.config";
 import { mapGetters } from "vuex";
+import fetch, { http } from "@/components/utils/fetch.config";
 
 export default {
   middleware: 'login',

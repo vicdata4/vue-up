@@ -1,4 +1,4 @@
-import { mount, shallowMount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 import Modal from '@/components/common/Modal.vue';
 
 describe('Modal without slots', () => {
