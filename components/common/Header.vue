@@ -5,7 +5,7 @@
     /></NuxtLink>
     <div class="header-menu">
       <NuxtLink to="/app" v-if="isLogged" :class="`menu-link${homeMenu ? ' home' : ''}`"><UserIcon /></NuxtLink>
-      <button v-if="isLogged" class="clear" @click="logOut">
+      <button id="logout" v-if="isLogged" class="clear" @click="logOut">
         <LogoutIcon />
       </button>
       <button v-if="!homeMenu" class="mobile-menu clear" @click="openMenu">
@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import { deleteCookie } from "/components/utils/functions";
+import { deleteCookie } from "@/components/utils/functions";
 import { mapGetters } from "vuex";
 import MenuIcon from "@/assets/svg/menu.svg";
 import UserIcon from "@/assets/svg/user.svg";
