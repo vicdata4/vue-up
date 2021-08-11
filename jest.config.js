@@ -10,7 +10,7 @@ module.exports = {
     'json'
   ],
   transform: {
-    '^.+\\.svg$': '<rootDir>/components/utils/jest-svg-transform.js',
+    '^.+\\.svg$': '<rootDir>/test/config/jest-svg-transform.js',
     '^.+\\.js$': 'babel-jest',
     '.*\\.(vue)$': 'vue-jest'
   },
