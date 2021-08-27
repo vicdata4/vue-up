@@ -1,23 +1,6 @@
 <template>
   <div class="container">
     <LoginForm ref="loginForm" class="login-case" v-if="!isLogged" @submit-form="submitForm" />
-    <div>
-      <h2>Componentes</h2>
-      <Modal>
-        <button slot="button">Modal Example</button>
-        <div slot="content">
-          Content
-          <button class="close">Close</button>
-        </div>
-      </Modal>
-      <Modal>
-        <button slot="button">Modal Example 22222</button>
-        <div slot="content">
-          Content 22222
-          <button class="close">Close2</button>
-        </div>
-      </Modal>
-    </div>
   </div>
 </template>
 

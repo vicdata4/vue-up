@@ -1,15 +1,15 @@
 <template>
   <aside>
     <ul>
-      <label><NuxtLink class="link" to="/seed">Quick Start</NuxtLink></label>
+      <label><NuxtLink class="link" to="/">Login</NuxtLink></label>
       <label>Units</label>
-      <li><NuxtLink class="link" to="/seed/carousel">Project</NuxtLink></li>
+      <li><NuxtLink class="link" to="/html">HTML</NuxtLink></li>
+      <li><NuxtLink class="link" to="/xml">XML</NuxtLink></li>
       <li>
-        <NuxtLink class="link" to="/seed/modal">Components</NuxtLink>
+        <NuxtLink class="link" to="/components">Components</NuxtLink>
       </li>
-      <li><NuxtLink class="link" to="/seed/dropdown">Testing</NuxtLink></li>
-      <li><NuxtLink class="link" to="/seed/ring">CI</NuxtLink></li>
-      <li><NuxtLink class="link" to="/seed/stepper">Stepper</NuxtLink></li>
+      <li><NuxtLink class="link" to="/testing">Testing</NuxtLink></li>
+      <li><NuxtLink class="link" to="/ci">CI</NuxtLink></li>
       <label>Documentation</label>
       <li><a class="link" target="_blank" href="https://lit.dev/">Vue</a></li>
       <li><a class="link" target="_blank" href="https://www.webcomponents.org/introduction">Nuxt</a></li>
