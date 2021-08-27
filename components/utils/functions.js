@@ -16,7 +16,7 @@ export const emailValidator = (email) => {
 };
 
 
-export const getXMLFile = async (fileName) => {
+export const getMLDocument = async (fileName) => {
   return new Promise(function (resolve, reject) {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onload = function (e) {

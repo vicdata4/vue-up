@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { getXMLFile } from "@/components/utils/functions";
+import { getMLDocument } from "@/components/utils/functions";
 
 export default {
   data() {
@@ -38,7 +38,7 @@ export default {
   },
   methods: {},
   async created() {
-    const response = await getXMLFile('/books.xml');
+    const response = await getMLDocument('/books.xml');
     
     this.xmlString = response.xmlString;
     this.list = response.xmlList;
@@ -53,12 +53,19 @@ textarea {
   resize: none;
 }
 
-th,
-tr {
-  text-align: left;
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-th {
-  color: grey;
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
 </style>

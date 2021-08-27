@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { getXMLFile } from "@/components/utils/functions";
+import { getMLDocument } from "@/components/utils/functions";
 
 export default {
     data() {
@@ -18,7 +18,7 @@ export default {
   },
 
   async created() {
-    const response = await getXMLFile('/books.xml');
+    const response = await getMLDocument('/books.xml');
     this.xmlString = response.xmlString;
   },
 };
