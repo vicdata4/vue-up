@@ -2,8 +2,11 @@
   <div class="container">
     XML example
     <textarea v-model="xmlString" readonly></textarea>
-    <a href="/books.xml" target="_blank">Show document from browser</a>
-    <NuxtLink to="/xml/table">Table representation</NuxtLink>
+    <ul>
+      <li><a href="/books.xml" target="_blank">Show document from browser</a></li>
+      <li><NuxtLink to="/xml/table">Table representation</NuxtLink></li>
+      <li><NuxtLink to="/xml/schema">XML Schema</NuxtLink></li>
+    </ul>
   </div>
 </template>
 

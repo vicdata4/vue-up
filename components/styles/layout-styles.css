@@ -48,6 +48,13 @@ html {
   padding-bottom: 20px;
   width: 100%;
 }
+
+.title-module {
+  color: #5a8cb6;
+  margin: 20px 0px;
+  font-size: 21px;
+  width: 100%;
+}
 .language-bash,
 .language-js,
 .language-markup {

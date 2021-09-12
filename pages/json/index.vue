@@ -3,8 +3,8 @@
     HTML example
     <textarea v-model="xmlString" readonly></textarea>
     <ul>
-      <li><a href="/example.html" target="_blank">Show document from browser</a></li>
-      <li><NuxtLink to="/html/tags">Tags</NuxtLink></li>
+      <li><a href="/example.json" target="_blank">Show document from browser</a></li>
+      <li><NuxtLink to="/json/table">Tags</NuxtLink></li>
     </ul>
   </div>
 </template>
@@ -20,7 +20,7 @@ export default {
   },
 
   async created() {
-    const response = await getMLDocument('/example.html');
+    const response = await getMLDocument('/example.json');
     this.xmlString = response.xmlString;
   },
 };

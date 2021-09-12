@@ -1,7 +1,9 @@
 <template>
   <div class="container">
-    <h2>Componentes</h2>
-    <NuxtLink to="/components/modal">Modal</NuxtLink>
+    <h2>Components</h2>
+    <ul>
+      <li><NuxtLink to="/components/modal">Modal</NuxtLink></li>
+    </ul>
   </div>
 </template>
 

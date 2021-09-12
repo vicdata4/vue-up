@@ -1,19 +1,20 @@
 <template>
   <aside>
     <ul>
-      <label><NuxtLink class="link" to="/">Login</NuxtLink></label>
+      <label><NuxtLink class="link" to="/">Home</NuxtLink></label>
       <label>Units</label>
       <li><NuxtLink class="link" to="/html">HTML</NuxtLink></li>
       <li><NuxtLink class="link" to="/xml">XML</NuxtLink></li>
+      <li><NuxtLink class="link" to="/json">JSON</NuxtLink></li>
       <li>
         <NuxtLink class="link" to="/components">Components</NuxtLink>
       </li>
       <li><NuxtLink class="link" to="/testing">Testing</NuxtLink></li>
       <li><NuxtLink class="link" to="/ci">CI</NuxtLink></li>
+      <li><NuxtLink class="link" to="/login">Auth</NuxtLink></li>
       <label>Documentation</label>
-      <li><a class="link" target="_blank" href="https://lit.dev/">Vue</a></li>
-      <li><a class="link" target="_blank" href="https://www.webcomponents.org/introduction">Nuxt</a></li>
-      <li><a class="link" target="_blank" href="https://github.com/vicdata4/vue-up">Github</a></li>
+      <li><a class="link" target="_blank" href="https://vuejs.org/v2/guide/">Vue</a></li>
+      <li><a class="link" target="_blank" href="https://nuxtjs.org/">Nuxt</a></li>
       <li><a href="https://github.com/vicdata4/vue-up" target="_blank"
         ><svg
           xmlns="http://www.w3.org/2000/svg"

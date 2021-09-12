@@ -63,4 +63,8 @@ export default {
       plugins: [["@babel/plugin-proposal-private-property-in-object", { "loose": true }]],
     },
   },
+  target: 'static',
+  router: {
+    base: '/vue-up/'
+  }
 }
