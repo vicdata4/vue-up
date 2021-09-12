@@ -3,7 +3,7 @@
     HTML example
     <textarea v-model="xmlString" readonly></textarea>
     <ul>
-      <li><a href="/example.html" target="_blank">Show document from browser</a></li>
+      <li><a href="/vue-up/example.html" target="_blank">Show document from browser</a></li>
       <li><NuxtLink to="/html/tags">Tags</NuxtLink></li>
     </ul>
   </div>

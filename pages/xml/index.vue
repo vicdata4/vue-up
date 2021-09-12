@@ -3,7 +3,7 @@
     XML example
     <textarea v-model="xmlString" readonly></textarea>
     <ul>
-      <li><a href="/books.xml" target="_blank">Show document from browser</a></li>
+      <li><a href="/vue-up/books.xml" target="_blank">Show document from browser</a></li>
       <li><NuxtLink to="/xml/table">Table representation</NuxtLink></li>
       <li><NuxtLink to="/xml/schema">XML Schema</NuxtLink></li>
     </ul>
