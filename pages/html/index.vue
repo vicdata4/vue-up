@@ -1,10 +1,11 @@
 <template>
   <div class="container">
-    HTML example
+    <h2 class="title">HTML</h2>
     <textarea v-model="xmlString" readonly></textarea>
     <ul>
       <li><a href="/vue-up/example.html" target="_blank">Show document from browser</a></li>
       <li><NuxtLink to="/html/tags">Tags</NuxtLink></li>
+      <li><NuxtLink to="/form">Learn about html form tag</NuxtLink></li>
     </ul>
   </div>
 </template>

@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+     <h2 class="title">Modal</h2>
     <Modal>
         <button slot="button">Modal Example</button>
         <div slot="content">

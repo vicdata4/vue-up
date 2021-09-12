@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h4>Home view</h4>
+    <h2 class="title">VueUp</h2>
   </div>
 </template>
 

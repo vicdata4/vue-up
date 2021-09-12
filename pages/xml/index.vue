@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    XML example
+    <h2 class="title">XML</h2>
     <textarea v-model="xmlString" readonly></textarea>
     <ul>
       <li><a href="/vue-up/books.xml" target="_blank">Show document from browser</a></li>
