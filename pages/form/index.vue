@@ -21,8 +21,9 @@
             id="role"
             class="field-select"
             v-model="role"
+            required
           >
-            <option select>Select your role</option>
+            <option value="" disabled select>Select your role</option>
             <option value="developer">Web Developer</option>
             <option value="designer">UI / UX Designer</option>
             <option value="po">Product owner</option>
@@ -44,7 +45,7 @@
           <label for="cars">Repeat password</label>
           <input
             type="password"
-            name="password2"
+            name="password-repeat"
             placeholder="repeat password"
             v-model="passwordRepeat"
             class="input-text"
@@ -88,24 +89,44 @@
           </div>
         </div>
       </div>
+      <p class="alert" v-if="alert">{{alert}}</p>
       <button type="submit" class="btn blue">Submit</button>
     </form>
   </div>
 </template>
 
 <script>
+import { emailValidator } from '@/components/utils/functions.js';
+
 export default {
   data() {
     return {
       email: null,
       password: null,
       passwordRepeat: null,
-      role: null,
+      role: '',
       hobbies: [],
+      alert: ''
     };
   },
   methods: {
     submitForm() {
+
+      if(!emailValidator(this.email)){
+        this.alert = 'Enter a valid email';
+        document.querySelector('input[type=email]').focus();
+        return;
+      }
+
+
+      if(this.password !== this.passwordRepeat) {
+        this.alert = 'Two password must be equal';
+        document.querySelector('input[name=password-repeat]').focus();
+        return;
+      }
+      
+      this.alert = '';
+
       const fields = {
         email: this.email,
         password: this.password,
@@ -113,7 +134,8 @@ export default {
         role: this.role,
         hobbies: this.hobbies,
       };
-      console.log(fields);
+
+      alert(JSON.stringify(fields));
     },
   },
 };
@@ -131,7 +153,7 @@ export default {
 
 .field-check {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .field,
@@ -145,13 +167,16 @@ export default {
 
 .field > input, .field-select {
   font-size: 16px;
-
   letter-spacing: 1.2px;
   min-width: 300px;
 }
 
 .field-check > input {
   margin-right: 10px;
+}
+
+.field-check > label {
+  font-size: 16px;
 }
 
 label {
@@ -162,5 +187,10 @@ label {
 
 input {
   padding: 10px 10px;
+}
+
+.alert {
+  padding: 15px 0px;
+  color: red;
 }
 </style>
