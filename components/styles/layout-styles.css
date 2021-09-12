@@ -78,6 +78,29 @@ html {
 .menu-bar.show {
   display: block;
 }
+
+.btn {
+  appearance: none;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+}
+
+.btn.blue {
+  background-color: #0eb2f8;
+  border: 1px solid transparent;
+  transition: all .15s ease-in-out;
+}
+
+.btn.blue:hover {
+  color: #0eb2f8;
+  border: 1px solid #0eb2f8;
+  background-color: white;
+}
 @media (min-width: 1024px) {
   .title {
     width: 50%;

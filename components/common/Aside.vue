@@ -6,6 +6,7 @@
       <li><NuxtLink class="link" to="/html">HTML</NuxtLink></li>
       <li><NuxtLink class="link" to="/xml">XML</NuxtLink></li>
       <li><NuxtLink class="link" to="/json">JSON</NuxtLink></li>
+      <li><NuxtLink class="link" to="/form">Form</NuxtLink></li>
       <li>
         <NuxtLink class="link" to="/components">Components</NuxtLink>
       </li>

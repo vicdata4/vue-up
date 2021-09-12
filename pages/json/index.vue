@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    HTML example
+    <h2 class="title">JSON</h2>
     <textarea v-model="xmlString" readonly></textarea>
     <ul>
       <li><a href="/vue-up/example.json" target="_blank">Show document from browser</a></li>

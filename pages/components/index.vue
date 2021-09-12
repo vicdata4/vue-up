@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2>Components</h2>
+    <h2 class="title">Components</h2>
     <ul>
       <li><NuxtLink to="/components/modal">Modal</NuxtLink></li>
     </ul>
