@@ -38,7 +38,7 @@ export const getMLDocument = async (fileName) => {
       reject();
     };
 
-    xmlhttp.open("GET", fileName, true);
+    xmlhttp.open("GET", `/vue-up${fileName}`, true);
     xmlhttp.send();
   });
 };
