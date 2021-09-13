@@ -6,6 +6,7 @@
       <li><a href="/vue-up/example.html" target="_blank">Show document from browser</a></li>
       <li><NuxtLink to="/html/tags">Tags</NuxtLink></li>
       <li><NuxtLink to="/form">Learn about html form tag</NuxtLink></li>
+      <li><NuxtLink to="/html/multimedia">Multimedia</NuxtLink></li>
     </ul>
   </div>
 </template>

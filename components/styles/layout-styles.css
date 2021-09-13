@@ -5,6 +5,8 @@ html {
   --header-padding: 80px;
   --green-color: #1e9fa7;
   --purple-color: rgb(152 90 182);
+  --color-black: #333333;
+  --color-blue: #0eb2f8;
   --header-background: rgb(50, 50, 50);
   --border-grey: #c7c4c4;
 }
@@ -50,7 +52,7 @@ html {
 }
 
 .title-module {
-  color: #5a8cb6;
+  color: #2196f3;
   margin: 20px 0px;
   font-size: 21px;
   width: 100%;
@@ -91,16 +93,33 @@ html {
 }
 
 .btn.blue {
-  background-color: #0eb2f8;
+  background-color: var(--color-blue);
   border: 1px solid transparent;
   transition: all .15s ease-in-out;
 }
 
-.btn.blue:hover {
-  color: #0eb2f8;
-  border: 1px solid #0eb2f8;
+.btn.black {
+  background-color: var(--color-black);
+  border: 1px solid transparent;
+  transition: all .15s ease-in-out;
+}
+
+.btn.hover.blue:hover {
+  color: var(--color-blue);
+  border: 1px solid var(--color-blue);
   background-color: white;
 }
+
+.btn.hover.black:hover {
+  color: var(--color-black);
+  border: 1px solid var(--color-black);
+  background-color: white;
+}
+
+.container-section {
+  margin-bottom: 80px;
+}
+
 @media (min-width: 1024px) {
   .title {
     width: 50%;
